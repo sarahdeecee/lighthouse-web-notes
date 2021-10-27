@@ -1,4 +1,4 @@
-# Week 1 Day 3 (10/27): Objects in JS
+# 10/27 W1D3: Objects in JS
 ## Review
 Yesterday, we worked with:
 * functions
