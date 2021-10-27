@@ -94,6 +94,9 @@ Weeks 9-10: | Jungle (Rails; not evaluated)
 * Shortcuts
   * Learn your shortcuts!! Don't use the mouse!
   * VS Code Cheat Sheet
+    * [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+    * [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+    * [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 * Useful Add-ons
   * Eslint
   * Bracket matching
