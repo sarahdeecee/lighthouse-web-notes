@@ -23,7 +23,7 @@
 #### Week 6
 * **Good real world prep!**
 * We define the teams, stack, and requirements (just like in the real world!) (from a list of 10)
-* Practice the fundamentals you’ve learned\
+* Practice the fundamentals you’ve learned
 * Introduction to project management, lifecycle and collaboration (with Git)
 * No lectures this week!
 * FF: Demo to peers on Friday (no proramming test) && career / resume prep
