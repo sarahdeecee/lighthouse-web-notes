@@ -37,10 +37,16 @@ const sayHello = function(string) { //function definition
 };
 
 sayHello('to my little friend.'); // calling the function (assigned to a variable) // function execution
-// ^( ... ) uniary operator
+// ^( ... ) unary operator: actuts on only one operand in an expression
 
 const myOtherVar = sayHello; // passed the function from one var to another
 console.log('myOtherVar',myOtherVar('monkey fuzz!'));
+
+/////
+
+myOtherVar.something = 'something else'; = //myOtherVar is also an object bc dot notation
+console.log(myOtherVar.something); // output: 'something else'
+console.log('myOtherVar("monkey fuzz!")', myOtherVar('monkey fuzz!'));
 ```
 
 ```javascript
@@ -64,10 +70,11 @@ const thisIsAnArray = ['all', 'manner', 544, TRUE];
 thisIsAnArray.forEach(function() { console.log('blah'); }) // array is using dot function -> means it's an object
 ```
 
-Callback: a function that get passed to another function to be invoked by that second function
+**Callback:** a function that get passed to another function to be invoked by that second function
 
-A higher order functinon (HOF): a function that accept another function as an argument
-Variables can be funcion valued
+**Higher Order Function (HOF):** a function that accept another function as an argument
+* e.g. forEach, filter
+
 ```javascript
 const runMe = function(callback) { // parameter is 'callback' => HOF // callback if function valued
   callback('Elise');

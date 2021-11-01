@@ -1,5 +1,7 @@
-# Automataed testing
-* The main goal of automated testing is to **improve overall code quality**
+# Automated testing
+Automated testing is the practice of writing code to **programmatically test** the actual code we want to write.
+### What are the benefits?
+The main goal of automated testing is to **improve overall code quality**
 
 ### Other benefits include
 * Save time compared to manual testing
@@ -11,15 +13,15 @@
 ## Test-Driven Development
 #### What is it?
 * Test-driven development (TDD) relies on tests to drive development
-* In other words, write the test first
+* In other words, write the test first and write the code to make the test pass
 1. **Write a failing test** to indicate which functionality needs to be added and how it should behave
-2. **Write the minimal amount of code** to make the test pass. At thtis stage, the code doesn't have to be elegant or clean.
-3. **Refactor the code.** Clean up the vode to make it more readable and maintainable.
+2. **Write the minimal amount of code** to make the test pass. At this stage, the code doesn't have to be elegant or clean.
+3. **Refactor the code.** Clean up the code to make it more readable and maintainable.
 
 # Demo
 1. [Node JS Assert](https://nelsonic.gitbooks.io/node-js-by-example/content/core/assert/README.html)
-2. Mocha
-3. Chai
+2. [Mocha](https://mochajs.org/)
+3. [Chai](https://www.chaijs.com/guide/styles/)
 
 ```javascript
 const numberOfVowels = str => {
@@ -90,7 +92,7 @@ try {
 ```
 
 **Try Catch** handle errors more gracefully.
-allows the script to continue even after an error
+Allows the script to continue even after an error.
 
 ```javascript
 try {
@@ -102,11 +104,11 @@ try {
 ```
 
 ## Let's use Mocha
-* npm install mocha --save-dev
+* `npm install mocha --save-dev`
   * development dependency
   * only want to install in development mode
-* npm init to make our json file
-  * (rm package.json to remove)
+* `npm init` to make our json file
+  * (`rm package.json` to remove)
 
 ```javascript
 //describe block => describe the function that you're testing
@@ -131,9 +133,10 @@ describe('numberOfVowels()', () => {
 });
 ```
 
-Note: You can try `npm list -g --depth 0` to get a simple list of all globally installed packages (the `--depth 0` flag makes sure it only tells you the names of the top-level packages instead of drilling into every single sub-package)
+### Notes
+* You can try `npm list -g --depth 0` to get a simple list of all globally installed packages (the `--depth 0` flag makes sure it only tells you the names of the top-level packages instead of drilling into every single sub-package)
 
-Mocha can work with any assertion library (node, Chai)
+* Mocha can work with any assertion library (node, Chai)
 
 ```javascript
 const { expect } = require('chai');
@@ -156,7 +159,6 @@ module.exports = { findPetByName, addNewPet }; // curly brackets bc multiple fun
 // module exports is a function
 ```
 ```javascript
-
 describe('findPetByName()', () => {
   it('Should return the pet object that matches the pet name `Coco`', () => {
     const result = findPetByName('Coco', pets);
@@ -180,8 +182,7 @@ describe('addNewPet', () => {
       breed: 'Domestic Cat',
       type: '🐱'
       age: 2
-    })
-  })
-
+    });
+  });
 })
 ```
