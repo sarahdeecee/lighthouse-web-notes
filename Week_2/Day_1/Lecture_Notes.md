@@ -44,7 +44,7 @@ module.exports = numberOfVowels;
 ```javascript
 // move to test folder/file
 const assert = require('assert'); //don't need to install because it's included in node
-const numberOfVowels = require('.../numberOfVowels');
+const numberOfVowels = require('../numberOfVowels');
 // const assert = require('assert').strict; //overwrites equal to be strict equal
 
 // try catch ensures program will continue to run

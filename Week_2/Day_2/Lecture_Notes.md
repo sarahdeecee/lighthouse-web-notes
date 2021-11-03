@@ -117,17 +117,25 @@ How to read a file? (Let's Google it)
   * fs is built into NodeJS. No need to npm install it!
 ```javascript
 const fs = require('fs');
-fs.readFile('./data1.txt', 'utf8', (err, data1) => {
-  // console.log(err); // let's see what's here
-  // console.log(data);
-  // how do I read a file next, and control the asyncs 
-  // so that I have everything in the end...
-  // nest to do in order!
-  fs.readFile('./data2.txt', 'utf8', (err, data2) => { 
-    fs.readFile('./data3.txt', 'utf8', (err, data3) => { 
-      console.log('Output: ' + Number(data1) + Number(data2) + Number(data3))
-    }); 
-  });
+const readThreeFiles = cb => {
+  fs.readFile('./data1.txt', 'utf8', (err, data1) => {
+    // console.log(err); // let's see what's here
+    // console.log(data);
+    // how do I read a file next, and control the asyncs 
+    // so that I have everything in the end...
+    // nest to do in order!
+    fs.readFile('./data2.txt', 'utf8', (err, data2) => { 
+      fs.readFile('./data3.txt', 'utf8', (err, data3) => { 
+        console.log('Output: ' + Number(data1) + Number(data2) + Number(data3));
+        cb( Number(data1) + Number(data2) + Number(data3))
+      }); 
+    });
+  })
+}
+
+console.log("TEST");
+readThreeFiles((sum) => {
+
 })
 
 ```
