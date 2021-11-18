@@ -13,3 +13,5 @@
 - css resets/normalization
 - css specificity
 - intro to flexbox
+
+Specificity score (1, 0, 0)
