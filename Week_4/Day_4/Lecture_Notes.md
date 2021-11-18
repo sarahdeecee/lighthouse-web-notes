@@ -21,6 +21,7 @@
 ## Mobile-First Design
 - create the layout for mobile first (bc more restrictions)
 - then extend the layout for a larger screen after
+- much easier to design mobile first than go back and fix a desktop layout
 
 ### Responsive design tools
 - relative units
@@ -84,9 +85,10 @@ vh |1% of the viewport height
     }
   }
 ```
-Much easier to design mobile first than go back and fix a desktop layout
-element element | div p | Selects all <p> inside <div> elements
-element > element | div > p | selects all <p> elements where the parent is a <div> element
+Type | Example | Description
+--- | --- | ---
+- element element | div p | Selects all `<p>` inside `<div>` elements
+- element > element | div > p | selects all `<p>` elements where the parent is a `<div>` element
 
 ## Responsive Images
 Images should change sizes according to screen resolution.
@@ -132,11 +134,11 @@ Class | Device Size | Screen Width
 .col-lg- | large | >=992px
 .col-xl- | xlarge | >=1200px
 
-# SASS
+## Sass: Syntactically Awesome Style Sheets
 - allows for more efficient CSS
 - can use variables for your CSS -> SASS will output it into a CSS file
 - features
   - variables, nesting, partials, mixins (like a function), extend/inheritance
     - partials: - split your CSS into multiple .scss files
-- npm i sass -g
-- npm run sass 
+- Install: `npm i sass -g`
+- Run: `npm run sass `
